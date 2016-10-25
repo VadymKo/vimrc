@@ -181,9 +181,15 @@ set expandtab
 " Be smart when using tabs ;)
 set smarttab
 
-" 1 tab == 4 spaces
+" 1 tab == 2 spaces
 set shiftwidth=2
 set tabstop=2
+
+" for rb files, 2 spaces
+autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
+
+" for py files, 4 spaces
+autocmd Filetype python setlocal ts=4 sw=4 sts=0 expandtab
 
 " Linebreak on 500 characters
 set lbr
