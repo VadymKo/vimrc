@@ -162,6 +162,19 @@ func! SyntasticCheckCoffeescript()
 endfunc
 nnoremap <silent> <leader>c :call SyntasticCheckCoffeescript()<cr>
 
+let g:syntastic_error_symbol = 'E>'
+let g:syntastic_warning_symbol = 'W>'
+let g:syntastic_enable_signs=1
+let g:syntastic_auto_jump=0
+let g:syntastic_auto_loc_list=1
+let g:syntastic_mode_map = { 'mode': 'passive'  }
+
+nmap <F10> :SyntasticInfo<CR>
+imap <F10> <Esc>:SyntasticInfo<CR>
+nmap <F11> :SyntasticReset<CR>
+imap <F11> <Esc>:SyntasticReset<CR>
+nmap <F12> :SyntasticCheck<CR>
+imap <F12> <Esc>:SyntasticCheck<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Git gutter (Git diff)
