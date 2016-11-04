@@ -1,3 +1,4 @@
+"
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Important: 
 "       This requries that you install https://github.com/amix/vimrc !
@@ -112,7 +113,6 @@ iab xdate <c-r>=strftime("%d/%m/%y %H:%M:%S")<cr>
 " => Omni complete functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
-
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

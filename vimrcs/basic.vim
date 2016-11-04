@@ -65,7 +65,6 @@ nmap <leader>w :w!<cr>
 " (useful for handling the permission-denied error)
 command W w !sudo tee % > /dev/null
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -190,6 +189,7 @@ autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 
 " for py files, 4 spaces
 autocmd Filetype python setlocal ts=4 sw=4 sts=0 expandtab
+autocmd Filetype json setlocal ts=4 sw=4 sts=0 expandtab
 
 " Linebreak on 500 characters
 set lbr
@@ -303,8 +303,6 @@ func! DeleteTrailingWS()
 endfunc
 autocmd BufWrite *.py :call DeleteTrailingWS()
 autocmd BufWrite *.coffee :call DeleteTrailingWS()
-autocmd BufWrite *.rb :call DeleteTrailingWS()
-autocmd BufWrite *.sh :call DeleteTrailingWS()
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -425,6 +423,13 @@ function! <SID>BufcloseCloseIt()
 endfunction
 
 " Make VIM remember position in file after reopen
-" if has("autocmd")
-"   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-"endif
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
+
+" Show numbers
+nmap <F6> :set number!<CR>
+imap <F6> <Esc>:set number!<CR>
+nmap <F5> :set number! \| :set relativenumber!<CR>
+imap <F5> <Esc>:set number! \| :set relativenumber!<CR>
+

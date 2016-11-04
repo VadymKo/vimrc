@@ -1,5 +1,3 @@
-export TERM=screen-256color
-
 cd ~/.vim_runtime
 
 echo 'set runtimepath+=~/.vim_runtime
