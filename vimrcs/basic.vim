@@ -433,3 +433,5 @@ imap <F6> <Esc>:set number!<CR>
 nmap <F5> :set number! \| :set relativenumber!<CR>
 imap <F5> <Esc>:set number! \| :set relativenumber!<CR>
 
+" Insert string by hotkey
+ map <leader>d <ESC>oimport ipdb; ipdb.set_trace()<ESC>
