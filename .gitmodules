@@ -1,16 +1,21 @@
 [submodule "molokai"]
   path = sources_forked/molokai
   url = https://github.com/tomasr/molokai.git
+  branch = master
 [submodule "AutoComplPop"]
   path = sources_non_forked/AutoComplPop
   url = https://github.com/vim-scripts/AutoComplPop.git
+  branch = master
 [submodule "vim-gitgutter"]
   path = sources_non_forked/vim-gitgutter
   url = https://github.com/airblade/vim-gitgutter.git
+  branch = master
 [submodule "vim-json"]
   path = sources_non_forked/vim-json
   url = https://github.com/elzr/vim-json.git
+  branch = master
 [submodule "vim-terraform"]
   path = sources_non_forked/vim-terraform
   url = https://github.com/hashivim/vim-terraform.git
+  branch = master
 
