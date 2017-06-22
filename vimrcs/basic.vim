@@ -435,3 +435,6 @@ imap <F5> <Esc>:set number! \| :set relativenumber!<CR>
 
 " Insert string by hotkey
  map <leader>d <ESC>oimport ipdb; ipdb.set_trace()<ESC>
+
+" Setup Terraform autoformat 
+let g:terraform_fmt_on_save = 1
