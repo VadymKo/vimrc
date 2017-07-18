@@ -44,7 +44,7 @@
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Sets how many lines of history VIM has to remember
-set history=500
+set history=10000
 
 " Enable filetype plugins
 filetype plugin on
@@ -180,9 +180,14 @@ set expandtab
 " Be smart when using tabs ;)
 set smarttab
 
-" 1 tab == 2 spaces
-set shiftwidth=2
-set tabstop=2
+" 1 tab == 4 spaces
+set shiftwidth=4
+set tabstop=8
+set softtabstop=4
+set expandtab
+set textwidth=80
+set formatoptions=qrn1j
+set colorcolumn=+1
 
 " for rb files, 2 spaces
 autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
