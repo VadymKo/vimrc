@@ -195,6 +195,8 @@ autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 " for py files, 4 spaces
 autocmd Filetype python setlocal ts=4 sw=4 sts=0 expandtab
 autocmd Filetype json setlocal ts=4 sw=4 sts=0 expandtab
+autocmd Filetype yml setlocal ts=2 sw=2 sts=0 expandtab
+autocmd Filetype tf setlocal ts=2 sw=2 sts=0 expandtab
 
 " Linebreak on 500 characters
 set lbr
