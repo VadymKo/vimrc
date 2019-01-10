@@ -207,6 +207,9 @@ set cinkeys-=0#
 set indentkeys-=0#
 set wrap "Wrap lines
 
+" Fold method manual
+:set foldmethod=manual
+
 
 """"""""""""""""""""""""""""""
 " => Visual mode related
